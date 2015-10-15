@@ -146,7 +146,7 @@ namespace Multithreading.Net
         protected override void OnFormClosing(FormClosingEventArgs e)
         {
             abort = true;
-            controller.Interrupt();
+            controller.Abort();
 
             base.OnFormClosing(e);
         }
